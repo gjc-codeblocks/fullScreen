@@ -1,0 +1,29 @@
+<div class="adBlock"></div>
+<div id="FullScreen" class="fullScreen">
+	<header>
+		<div class="close">
+			<span>Ir para o Blog <span class="glyphicon glyphicon-chevron-right"/></span>
+		</div>
+	</header>
+	
+	<div class="content">
+		<div class="img-container">
+			<img class="img_ img_car" src="{{car.url}}" ng-show="car.exibir" ng-repeat="car in cars"/>
+		</div>
+		<div class="colors">
+			<ul>
+				<li ng-repeat="car in cars" class="{{car.cor}}" ng-class="{selecionado: car.exibir}" ng-click="changeColor(car.cor)"></li>
+			</ul>
+		</div>
+ 		<div class="info-content">
+			<span class="info glyphicon glyphicon-info-sign" ng-class="{expandido: info.showDescricao}" ng-click="showDescricao($index)" style="right:{{info.right}}; top:{{info.top}};" ng-repeat="info in infos">
+				<div class="descricao" ng-show="info.showDescricao">
+					<h1>{{info.titulo}}</h1>
+					<p>{{info.descricao}}</p>
+				</div>
+			</span>
+		</div>
+		
+		<div class="background-02"></div>
+	</div>
+</div>

@@ -1,0 +1,225 @@
+.pop-up {
+	width: 80%;
+    position: fixed;
+    margin: 5% auto;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    
+    .background-01{
+    	width: 100%;
+    	height: 100%;
+    	background-color: rgba(13, 0, 255, 0.27);
+    	z-index: -1;
+    }
+    
+    .background-02{
+    	width: 100%;
+    	height: 30%;
+    	background-color: rgb(241, 99, 19);
+    	position: absolute;
+    	bottom: -240px;
+    	-webkit-filter: brightness(0%);
+    	transition: all 3s;
+    	z-index: 0;
+    }
+    
+    .texto{
+    	position: absolute;
+    	top: 60px;
+    	left: 120px;
+    	font-size: 24px;
+    	font-weight: bold;
+    	text-transform: uppercase;
+    	opacity: .3;
+    	visibility: hidden;
+    }
+    
+    .img-container{
+		margin-left: auto;
+		margin-right: auto;
+		position: absolute;
+		bottom: -240px;
+		transition: all 3s;
+		left: 0px;
+		right: 0px;
+		z-index: 1;
+		
+		.img_car{
+			-webkit-filter: brightness(0%);
+			transition: all 3s;
+		}
+		
+		.expandido{
+			opacity: 1 !important;
+		}
+		
+		.info{
+			width: 20px;
+			height: 20px;
+			border: 2px solid rgba(204, 204, 204, .5);
+			border-radius: 50%;
+			position: relative;
+			visibility: hidden;
+			
+			&:hover{
+				opacity: 1;
+			}
+			
+			.descricao{
+				width: 80px;
+				height: 90px;
+				float: left;
+				margin-top: 5px;
+				margin-left: 5px;
+				padding: 5px;
+				background-color: #fff;
+				border-radius: 5px;
+				
+				h1{
+					font-size: 18px;
+					text-transform: uppercase;
+					font-weight: bold;
+				}
+				
+				p{
+					width: 100%;
+					height: 75%;
+					margin: 0px;
+					padding: 0px;
+				}
+			}
+		}
+		.glyphicon{
+			line-height: 1.2;
+			opacity: .5;
+			color: #ccc;
+		}
+	}
+    
+    .colors{
+    	position: absolute;
+    	bottom: 0px;
+    	left: 0px;
+    	right: 0px;
+    	z-index: 1;
+    	visibility: hidden;
+    
+    	ul{
+    		width: 160px;
+    		display: flex;
+    		list-style: none;
+    		margin-left: auto;
+    		margin-right: auto;
+    	}
+    
+    	li{
+    		width: 20px;
+    		height: 20px;
+    		border-radius: 10px;
+    		margin-left: 10px;
+    		margin-right: 10px;
+    		position: relative;
+    		
+    		&:hover{    		
+    			
+    			&:after{
+    				content: '';
+    				width: 26px;
+    				height: 26px;
+    				position: absolute;
+    				top: -3px;
+    				left: -3px;
+    				border-radius: 50%;
+    				border: 1px solid black;
+    			}
+    		}
+    	}
+    	.vermelho{background-color: red;}
+    	.prata{background-color: #cacaca;}
+    	.preto{background-color: black;}
+    	
+    	.selecionado{
+    		&:after{
+    			content: '';
+    			width: 26px;
+    			height: 26px;
+    			position: absolute;
+    			top: -3px;
+    			left: -3px;
+    			border-radius: 50%;
+    			border: 1px solid black;
+    		}
+    	}
+    }    
+}
+
+.box {
+	height: 500px;
+    background-color: whitesmoke;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+    -webkit-box-shadow: 2px 4px 6px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 2px 4px 6px 0px rgba(0,0,0,0.1);
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button {
+	margin: 0 auto;
+	background-color: #FF8566;
+    margin-bottom: 33px;
+}
+
+.button{
+	&:hover {
+	    background-color: #7CCF29;
+	    -webkit-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
+	    -moz-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
+	    box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
+	}
+}
+
+.close-button {
+    transition: all 0.5s ease;
+    position: absolute;
+    background-color: #FF9980;
+    padding: 1.5px 7px;
+    left: 0;
+    margin-left: -10px;
+    margin-top: -9px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    color: white;
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.close-button{
+	&:hover {
+	    background-color: tomato;
+	    color: #fff;
+	}
+}
+
+h3 {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #fff;
+    background-color: #FF704D;
+}
+
+p {
+    padding: 20px 65px 10px 65px;
+    color: dimgray;
+}
+
+h1 {
+    color: dimgray;
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+}

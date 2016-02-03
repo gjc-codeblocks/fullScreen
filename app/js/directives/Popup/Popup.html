@@ -1,0 +1,23 @@
+<div class="row pop-up">
+	<a href="#" class="close-button">&#10006;</a>
+	<div class="box small-6 large-centered">
+		<h1 class="texto">Texto Grande</h1>
+													  
+		<div class="img-container">
+			<img class="img_ img_car" src="{{car.url}}" ng-show="car.exibir" ng-repeat="car in cars"/>
+			<span class="info glyphicon glyphicon-info-sign" ng-class="{expandido: info.showDescricao}" ng-click="showDescricao($index)" style="right:{{info.right}}; top:{{info.top}};" ng-repeat="info in infos">
+				<div class="descricao" ng-show="info.showDescricao">
+					<h1>{{info.titulo}}</h1>
+					<p>{{info.descricao}}</p>
+				</div>
+			</span>
+		</div>
+		<div class="colors">
+			<ul>
+				<li ng-repeat="car in cars" class="{{car.cor}}" ng-class="{selecionado: car.exibir}" ng-click="changeColor(car.cor)"></li>
+			</ul>
+		</div>
+		<div class="background-01"></div>
+		<div class="background-02"></div>
+	</div>
+</div>

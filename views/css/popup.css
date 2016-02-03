@@ -1,0 +1,179 @@
+.pop-up {
+  width: 80%;
+  position: fixed;
+  margin: 5% auto;
+  left: 0;
+  right: 0;
+  z-index: 2; }
+  .pop-up .background-01 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 0, 255, 0.27);
+    z-index: -1; }
+  .pop-up .background-02 {
+    width: 100%;
+    height: 30%;
+    background-color: #f16313;
+    position: absolute;
+    bottom: -240px;
+    -webkit-filter: brightness(0%);
+    transition: all 3s;
+    z-index: 0; }
+  .pop-up .texto {
+    position: absolute;
+    top: 60px;
+    left: 120px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: .3;
+    visibility: hidden; }
+  .pop-up .img-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom: -240px;
+    transition: all 3s;
+    left: 0px;
+    right: 0px;
+    z-index: 1; }
+    .pop-up .img-container .img_car {
+      -webkit-filter: brightness(0%);
+      transition: all 3s; }
+    .pop-up .img-container .expandido {
+      opacity: 1 !important; }
+    .pop-up .img-container .info {
+      width: 20px;
+      height: 20px;
+      border: 2px solid rgba(204, 204, 204, 0.5);
+      border-radius: 50%;
+      position: relative;
+      visibility: hidden; }
+      .pop-up .img-container .info:hover {
+        opacity: 1; }
+      .pop-up .img-container .info .descricao {
+        width: 80px;
+        height: 90px;
+        float: left;
+        margin-top: 5px;
+        margin-left: 5px;
+        padding: 5px;
+        background-color: #fff;
+        border-radius: 5px; }
+        .pop-up .img-container .info .descricao h1 {
+          font-size: 18px;
+          text-transform: uppercase;
+          font-weight: bold; }
+        .pop-up .img-container .info .descricao p {
+          width: 100%;
+          height: 75%;
+          margin: 0px;
+          padding: 0px; }
+    .pop-up .img-container .glyphicon {
+      line-height: 1.2;
+      opacity: .5;
+      color: #ccc; }
+  .pop-up .colors {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    visibility: hidden; }
+    .pop-up .colors ul {
+      width: 160px;
+      display: flex;
+      list-style: none;
+      margin-left: auto;
+      margin-right: auto; }
+    .pop-up .colors li {
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      position: relative; }
+      .pop-up .colors li:hover:after {
+        content: '';
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        border-radius: 50%;
+        border: 1px solid black; }
+    .pop-up .colors .vermelho {
+      background-color: red; }
+    .pop-up .colors .prata {
+      background-color: #cacaca; }
+    .pop-up .colors .preto {
+      background-color: black; }
+    .pop-up .colors .selecionado:after {
+      content: '';
+      width: 26px;
+      height: 26px;
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      border-radius: 50%;
+      border: 1px solid black; }
+
+.box {
+  height: 500px;
+  background-color: whitesmoke;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.button {
+  margin: 0 auto;
+  background-color: #FF8566;
+  margin-bottom: 33px; }
+
+.button:hover {
+  background-color: #7CCF29;
+  -webkit-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1); }
+
+.close-button {
+  transition: all 0.5s ease;
+  position: absolute;
+  background-color: #FF9980;
+  padding: 1.5px 7px;
+  left: 0;
+  margin-left: -10px;
+  margin-top: -9px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: white;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  z-index: 1; }
+
+.close-button:hover {
+  background-color: tomato;
+  color: #fff; }
+
+h3 {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #fff;
+  background-color: #FF704D; }
+
+p {
+  padding: 20px 65px 10px 65px;
+  color: dimgray; }
+
+h1 {
+  color: dimgray;
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif; }
+
+/*# sourceMappingURL=popup.css.map */
