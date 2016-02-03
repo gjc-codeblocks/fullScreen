@@ -1,0 +1,154 @@
+.adBlock {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: fixed;
+  z-index: 99; }
+
+.fullScreen {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999; }
+  .fullScreen header {
+    height: 60px;
+    border-bottom: 1px inset #c0c0c0;
+    z-index: 99; }
+    .fullScreen header .close {
+      height: 100%;
+      float: right;
+      padding: 20px; }
+      .fullScreen header .close span {
+        text-transform: uppercase; }
+  .fullScreen .content {
+    height: 100%;
+    background-color: #102e55; }
+    .fullScreen .content .background-02 {
+      width: 100%;
+      height: 35%;
+      background-color: #105155;
+      position: absolute;
+      bottom: -240px;
+      -webkit-filter: brightness(0%);
+      transition: all 3s; }
+      @media screen and (max-width: 560px) {
+        .fullScreen .content .background-02 {
+          height: 25%; } }
+    .fullScreen .content .img-container {
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      position: absolute;
+      bottom: -240px;
+      transition: all 3s;
+      left: 0px;
+      right: 0px;
+      z-index: 1; }
+      .fullScreen .content .img-container .img_car {
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+        -webkit-filter: brightness(0%);
+        transition: all 3s;
+        position: absolute;
+        bottom: 0px;
+        left: -31%;
+        right: 0; }
+        @media screen and (max-width: 560px) {
+          .fullScreen .content .img-container .img_car {
+            width: 120%;
+            left: -13%;
+            bottom: 15%;
+            transition: 0s; } }
+    .fullScreen .content .expandido {
+      opacity: 1 !important; }
+    .fullScreen .content .info-content {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      z-index: 99; }
+      @media screen and (max-width: 560px) {
+        .fullScreen .content .info-content {
+          display: none; } }
+    .fullScreen .content .info {
+      width: 20px;
+      height: 20px;
+      border: 2px solid rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      position: absolute;
+      visibility: hidden; }
+      .fullScreen .content .info:hover {
+        opacity: 1; }
+      .fullScreen .content .info .descricao {
+        width: 80px;
+        height: 90px;
+        float: left;
+        margin-top: 5px;
+        margin-left: 5px;
+        padding: 5px;
+        background-color: #fff;
+        border-radius: 5px; }
+        .fullScreen .content .info .descricao h1 {
+          font-size: 18px;
+          text-transform: uppercase;
+          font-weight: bold; }
+        .fullScreen .content .info .descricao p {
+          width: 100%;
+          height: 75%;
+          margin: 0px;
+          padding: 0px; }
+    .fullScreen .content .glyphicon {
+      line-height: 1.2;
+      opacity: .5;
+      color: black; }
+  .fullScreen .colors {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 999;
+    visibility: hidden; }
+    .fullScreen .colors ul {
+      width: 160px;
+      display: flex;
+      list-style: none;
+      margin-left: auto;
+      margin-right: auto; }
+    .fullScreen .colors li {
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      position: relative; }
+      .fullScreen .colors li:hover:after {
+        content: '';
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        border-radius: 50%;
+        border: 1px solid black; }
+    .fullScreen .colors .vermelho {
+      background-color: red; }
+    .fullScreen .colors .prata {
+      background-color: #cacaca; }
+    .fullScreen .colors .preto {
+      background-color: black; }
+    .fullScreen .colors .selecionado:after {
+      content: '';
+      width: 26px;
+      height: 26px;
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      border-radius: 50%;
+      border: 1px solid black; }
+
+/*# sourceMappingURL=fullScreen.css.map */
